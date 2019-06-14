@@ -58,8 +58,7 @@ public class BitManipulation {
     }
 
     static void pBinInt(String s, int i) {
-        System.out.println(
-                s + ", int: " + i + ", binary: ");
+        System.out.println(s + ", int: " + i + ", binary: ");
         System.out.print("   ");
         for (int j = 31; j >= 0; j--)
             if (((1 << j) & i) != 0)
@@ -70,8 +69,7 @@ public class BitManipulation {
     }
 
     static void pBinLong(String s, long l) {
-        System.out.println(
-                s + ", long: " + l + ", binary: ");
+        System.out.println(s + ", long: " + l + ", binary: ");
         System.out.print("   ");
         for (int i = 63; i >= 0; i--)
             if (((1L << i) & l) != 0)
