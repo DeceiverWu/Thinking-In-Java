@@ -52,16 +52,14 @@ class Base {
         System.out.println("Base Static Block 2");
     }
 
-    /*3*/
-    {
+    /*3*/ {
         System.out.println("Base Normal Block 1");
     }
 
     /*3*/
     private static String value = Log.baseFieldInit();
 
-    /*3*/
-    {
+    /*3*/ {
         System.out.println("Base Normal Block 2");
     }
 
@@ -87,16 +85,14 @@ public class Derived extends Base {
         System.out.println("Static Block 2");
     }
 
-    /*5*/
-    {
+    /*5*/ {
         System.out.println("Normal Block 1");
     }
 
     /*5*/
     private String value = Log.fieldInit();
 
-    /*5*/
-    {
+    /*5*/ {
         System.out.println("Normal Block 2");
     }
 

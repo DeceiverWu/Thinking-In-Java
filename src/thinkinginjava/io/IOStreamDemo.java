@@ -23,14 +23,14 @@ public class IOStreamDemo {
             StringBufferInputStream in2 = new StringBufferInputStream(s2);
             int c;
             while ((c = in2.read()) != -1) {
-                System.out.println((char)c);
+                System.out.println((char) c);
             }
 
             try {
                 DataInputStream in3 = new DataInputStream(new StringBufferInputStream(s2));
-                while(true)
-                    System.out.print((char)in3.readByte());
-            } catch(EOFException e) {
+                while (true)
+                    System.out.print((char) in3.readByte());
+            } catch (EOFException e) {
                 System.out.println("End of stream encountered");
             }
 
@@ -38,10 +38,10 @@ public class IOStreamDemo {
                 LineNumberInputStream li = new LineNumberInputStream(new StringBufferInputStream(s2));
                 DataInputStream in4 = new DataInputStream(li);
                 PrintStream out1 = new PrintStream(new BufferedOutputStream(new FileOutputStream("IODemo.out")));
-                while((s = in4.readLine()) != null )
+                while ((s = in4.readLine()) != null)
                     out1.println("Line " + li.getLineNumber() + s);
                 out1.close(); // finalize() not reliable!
-            } catch(EOFException e) {
+            } catch (EOFException e) {
                 System.out.println("End of stream encountered");
             }
 

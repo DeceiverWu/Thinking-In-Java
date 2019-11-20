@@ -10,6 +10,7 @@ package thinkinginjava.initialandclear;
 public class Tree {
 
     int height;
+
     Tree() {
         prt("Planting a seedling");
         height = 0;
@@ -25,6 +26,7 @@ public class Tree {
         prt("Tree is " + height
                 + " feet tall");
     }
+
     void info(String s) {
         prt(s + ": Tree is "
                 + height + " feet tall");
@@ -37,7 +39,7 @@ public class Tree {
     public static class Overloading {
 
         public static void main(String[] args) {
-            for(int i = 0; i < 5; i++) {
+            for (int i = 0; i < 5; i++) {
                 Tree t = new Tree(i);
                 t.info();
                 t.info("overloaded method");

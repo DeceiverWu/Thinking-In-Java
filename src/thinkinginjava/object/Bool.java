@@ -25,9 +25,9 @@ public class Bool {
         prt("i != j is " + (i != j));
 
         prt("(i < 10) && (j < 10) is "
-                + ((i < 10) && (j < 10)) );
+                + ((i < 10) && (j < 10)));
         prt("(i < 10) || (j < 10) is "
-                + ((i < 10) || (j < 10)) );
+                + ((i < 10) || (j < 10)));
     }
 
     static void prt(String s) {

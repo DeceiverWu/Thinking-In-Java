@@ -10,10 +10,10 @@ package thinkinginjava.object;
 public class VowelsAndConsonants {
 
     public static void main(String[] args) {
-        for(int i = 0; i < 100; i++) {
-            char c = (char)(Math.random() * 26 + 'a');
+        for (int i = 0; i < 100; i++) {
+            char c = (char) (Math.random() * 26 + 'a');
             System.out.print(c + ": ");
-            switch(c) {
+            switch (c) {
                 case 'a':
                 case 'e':
                 case 'i':
@@ -21,7 +21,7 @@ public class VowelsAndConsonants {
                 case 'u':
                     System.out.println("vowel");
                     break;
-                    case 'y':
+                case 'y':
                 case 'w':
                     System.out.println(
                             "Sometimes a vowel");

@@ -17,7 +17,7 @@ public class ArrayInit {
         };
 
         // Java 1.1 only:
-        Integer[] b = new Integer[] {
+        Integer[] b = new Integer[]{
                 new Integer(1),
                 new Integer(2),
                 new Integer(3),
